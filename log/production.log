@@ -1,0 +1,655 @@
+I, [2023-11-30T06:07:05.191892 #70120]  INFO -- : Migrating to DeviseCreateUsers (20231023124245)
+I, [2023-11-30T06:07:05.212103 #70120]  INFO -- : Migrating to CreateRestaurants (20231024113411)
+I, [2023-11-30T06:07:05.220002 #70120]  INFO -- : Migrating to CreateFoodItems (20231024114729)
+I, [2023-11-30T06:07:05.227350 #70120]  INFO -- : Migrating to CreateOrders (20231024125728)
+I, [2023-11-30T06:07:05.237304 #70120]  INFO -- : Migrating to CreateOrderItems (20231024132244)
+I, [2023-11-30T06:07:05.244253 #70120]  INFO -- : Migrating to CreateCoupons (20231024132607)
+I, [2023-11-30T06:07:05.249482 #70120]  INFO -- : Migrating to CreateCarts (20231024133121)
+I, [2023-11-30T06:07:05.258236 #70120]  INFO -- : Migrating to CreateCartItems (20231024133304)
+I, [2023-11-30T06:07:05.266727 #70120]  INFO -- : Migrating to RenameUserRoleToType (20231024174029)
+I, [2023-11-30T06:07:05.271169 #70120]  INFO -- : Migrating to DeviseCreateAdminUsers (20231025111908)
+I, [2023-11-30T06:07:05.279707 #70120]  INFO -- : Migrating to CreateActiveAdminComments (20231025111911)
+I, [2023-11-30T06:07:05.287185 #70120]  INFO -- : Migrating to AddAmountToCoupons (20231026074123)
+I, [2023-11-30T06:07:05.289389 #70120]  INFO -- : Migrating to CreateActiveStorageTables (20231027102638)
+I, [2023-11-30T06:07:05.306634 #70120]  INFO -- : Migrating to AddDescriptionToFoodItems (20231027104621)
+I, [2023-11-30T06:07:05.310125 #70120]  INFO -- : Migrating to AddColumnsToOrderItems (20231030105445)
+I, [2023-11-30T06:07:05.314127 #70120]  INFO -- : Migrating to AddCartIdToOrderItems (20231031110959)
+I, [2023-11-30T06:07:05.319171 #70120]  INFO -- : Migrating to ChangeOrderItemsOrderIdNullConstraint (20231031112521)
+I, [2023-11-30T06:07:05.323203 #70120]  INFO -- : Migrating to CreateVerificationDetails (20231031143150)
+I, [2023-11-30T06:07:05.329822 #70120]  INFO -- : Migrating to AddVerifiedColumnToUsers (20231101182343)
+I, [2023-11-30T06:07:05.333821 #70120]  INFO -- : Migrating to AddBankNameToVerificationDetail (20231109161114)
+I, [2023-11-30T06:07:05.336415 #70120]  INFO -- : Migrating to AddCouponAppliedToCarts (20231110135927)
+I, [2023-11-30T06:07:05.338841 #70120]  INFO -- : Migrating to ChangeDecimalPrecision (20231110143122)
+I, [2023-11-30T06:07:05.367342 #70120]  INFO -- : Migrating to AddCouponIdToCart (20231116195751)
+I, [2023-11-30T06:07:05.373495 #70120]  INFO -- : Migrating to RemoveNullConstraintFromCart (20231120212008)
+I, [2023-11-30T06:08:45.641455 #70225]  INFO -- : [a0f94ec5-186b-4a81-bc02-0b682a47de9b] Started GET "/" for 127.0.0.1 at 2023-11-30 06:08:45 +0500
+I, [2023-11-30T06:08:45.646252 #70225]  INFO -- : [a0f94ec5-186b-4a81-bc02-0b682a47de9b] Processing by RestaurantsController#index as HTML
+I, [2023-11-30T06:08:45.737967 #70225]  INFO -- : [a0f94ec5-186b-4a81-bc02-0b682a47de9b]   Rendered restaurants/index.html.erb within layouts/application (Duration: 74.8ms | Allocations: 3917)
+I, [2023-11-30T06:08:45.753599 #70225]  INFO -- : [a0f94ec5-186b-4a81-bc02-0b682a47de9b]   Rendered layout layouts/application.html.erb (Duration: 90.5ms | Allocations: 11037)
+I, [2023-11-30T06:08:45.753902 #70225]  INFO -- : [a0f94ec5-186b-4a81-bc02-0b682a47de9b] Completed 200 OK in 107ms (Views: 88.3ms | ActiveRecord: 10.0ms | Allocations: 12830)
+I, [2023-11-30T06:08:45.841083 #70225]  INFO -- : [64306022-19c9-454a-9d21-c954d71c603e] Started GET "/assets/controllers/application" for 127.0.0.1 at 2023-11-30 06:08:45 +0500
+I, [2023-11-30T06:08:45.844577 #70225]  INFO -- : [209b8ce3-8606-4c8f-a324-6725d6f986e6] Started GET "/assets/controllers/carrier_controller" for 127.0.0.1 at 2023-11-30 06:08:45 +0500
+I, [2023-11-30T06:08:45.844953 #70225]  INFO -- : [01df3761-8d42-48f5-8349-4d45c1a8b967] Started GET "/assets/controllers/order_controller" for 127.0.0.1 at 2023-11-30 06:08:45 +0500
+I, [2023-11-30T06:08:45.847208 #70225]  INFO -- : [d32c4435-4e0e-4be5-8327-97528ac3fe7f] Started GET "/assets/controllers/cart_controller" for 127.0.0.1 at 2023-11-30 06:08:45 +0500
+I, [2023-11-30T06:08:45.849619 #70225]  INFO -- : [85bcd21b-4c81-42e6-a93d-ed9dbec4d538] Started GET "/assets/controllers/hello_controller" for 127.0.0.1 at 2023-11-30 06:08:45 +0500
+I, [2023-11-30T06:08:50.459754 #70225]  INFO -- : [bdbc3bb4-0998-49bb-9e1c-599c4dafbb17] Started GET "/admin" for 127.0.0.1 at 2023-11-30 06:08:50 +0500
+I, [2023-11-30T06:08:50.460630 #70225]  INFO -- : [bdbc3bb4-0998-49bb-9e1c-599c4dafbb17] Processing by Admin::DashboardController#index as HTML
+I, [2023-11-30T06:08:50.461493 #70225]  INFO -- : [bdbc3bb4-0998-49bb-9e1c-599c4dafbb17] Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 489)
+I, [2023-11-30T06:08:50.467779 #70225]  INFO -- : [933ea57c-952a-43d8-9627-0c89e3195e43] Started GET "/admin/login" for 127.0.0.1 at 2023-11-30 06:08:50 +0500
+I, [2023-11-30T06:08:50.468713 #70225]  INFO -- : [933ea57c-952a-43d8-9627-0c89e3195e43] Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+I, [2023-11-30T06:08:50.502021 #70225]  INFO -- : [933ea57c-952a-43d8-9627-0c89e3195e43]   Rendered /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (Duration: 15.4ms | Allocations: 6724)
+I, [2023-11-30T06:08:50.504468 #70225]  INFO -- : [933ea57c-952a-43d8-9627-0c89e3195e43]   Rendered layout /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/layouts/active_admin_logged_out.html.erb (Duration: 17.9ms | Allocations: 7791)
+I, [2023-11-30T06:08:50.504822 #70225]  INFO -- : [933ea57c-952a-43d8-9627-0c89e3195e43] Completed 200 OK in 36ms (Views: 21.3ms | ActiveRecord: 7.4ms | Allocations: 12245)
+I, [2023-11-30T06:09:19.582706 #70225]  INFO -- : [30c70cbc-ef82-45e1-b672-e9ea13d38d2c] Started POST "/admin/login" for 127.0.0.1 at 2023-11-30 06:09:19 +0500
+I, [2023-11-30T06:09:19.583993 #70225]  INFO -- : [30c70cbc-ef82-45e1-b672-e9ea13d38d2c] Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+I, [2023-11-30T06:09:19.584164 #70225]  INFO -- : [30c70cbc-ef82-45e1-b672-e9ea13d38d2c]   Parameters: {"authenticity_token"=>"[FILTERED]", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+I, [2023-11-30T06:09:19.590743 #70225]  INFO -- : [30c70cbc-ef82-45e1-b672-e9ea13d38d2c] Completed 401 Unauthorized in 6ms (ActiveRecord: 2.2ms | Allocations: 1519)
+I, [2023-11-30T06:09:19.591734 #70225]  INFO -- : [30c70cbc-ef82-45e1-b672-e9ea13d38d2c] Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+I, [2023-11-30T06:09:19.591806 #70225]  INFO -- : [30c70cbc-ef82-45e1-b672-e9ea13d38d2c]   Parameters: {"authenticity_token"=>"[FILTERED]", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+I, [2023-11-30T06:09:19.829941 #70225]  INFO -- : [30c70cbc-ef82-45e1-b672-e9ea13d38d2c]   Rendered /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (Duration: 4.1ms | Allocations: 3252)
+I, [2023-11-30T06:09:19.830521 #70225]  INFO -- : [30c70cbc-ef82-45e1-b672-e9ea13d38d2c]   Rendered layout /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/layouts/active_admin_logged_out.html.erb (Duration: 4.7ms | Allocations: 3697)
+I, [2023-11-30T06:09:19.830702 #70225]  INFO -- : [30c70cbc-ef82-45e1-b672-e9ea13d38d2c] Completed 200 OK in 239ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 4989)
+I, [2023-11-30T06:10:33.588395 #70225]  INFO -- : [dfa850be-51f4-4f35-8f48-871b3d4b4053] Started POST "/admin/login" for 127.0.0.1 at 2023-11-30 06:10:33 +0500
+I, [2023-11-30T06:10:33.590793 #70225]  INFO -- : [dfa850be-51f4-4f35-8f48-871b3d4b4053] Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+I, [2023-11-30T06:10:33.590926 #70225]  INFO -- : [dfa850be-51f4-4f35-8f48-871b3d4b4053]   Parameters: {"authenticity_token"=>"[FILTERED]", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+I, [2023-11-30T06:10:33.825726 #70225]  INFO -- : [dfa850be-51f4-4f35-8f48-871b3d4b4053] Redirected to http://0.0.0.0:3000/admin/dashboard
+I, [2023-11-30T06:10:33.825899 #70225]  INFO -- : [dfa850be-51f4-4f35-8f48-871b3d4b4053] Completed 303 See Other in 235ms (ActiveRecord: 0.4ms | Allocations: 2108)
+I, [2023-11-30T06:10:33.828993 #70225]  INFO -- : [db5de72d-bd67-42b5-812c-31da81138758] Started GET "/admin/dashboard" for 127.0.0.1 at 2023-11-30 06:10:33 +0500
+I, [2023-11-30T06:10:33.829616 #70225]  INFO -- : [db5de72d-bd67-42b5-812c-31da81138758] Processing by Admin::DashboardController#index as HTML
+I, [2023-11-30T06:10:33.850956 #70225]  INFO -- : [db5de72d-bd67-42b5-812c-31da81138758]   Rendered /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/active_admin/page/index.html.arb (Duration: 16.6ms | Allocations: 9688)
+I, [2023-11-30T06:10:33.851585 #70225]  INFO -- : [db5de72d-bd67-42b5-812c-31da81138758] Completed 200 OK in 22ms (Views: 14.8ms | ActiveRecord: 3.6ms | Allocations: 11418)
+I, [2023-11-30T06:10:37.232193 #70225]  INFO -- : [be08fca3-7597-4d83-b43a-0455bc1d43b9] Started GET "/admin/restaurants" for 127.0.0.1 at 2023-11-30 06:10:37 +0500
+I, [2023-11-30T06:10:37.232921 #70225]  INFO -- : [be08fca3-7597-4d83-b43a-0455bc1d43b9] Processing by Admin::RestaurantsController#index as HTML
+I, [2023-11-30T06:10:37.260563 #70225]  INFO -- : [be08fca3-7597-4d83-b43a-0455bc1d43b9]   Rendered /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/active_admin/resource/index.html.arb (Duration: 18.0ms | Allocations: 12167)
+I, [2023-11-30T06:10:37.260944 #70225]  INFO -- : [be08fca3-7597-4d83-b43a-0455bc1d43b9] Completed 200 OK in 28ms (Views: 19.9ms | ActiveRecord: 3.4ms | Allocations: 14707)
+I, [2023-11-30T06:10:38.831399 #70225]  INFO -- : [7c4ef57e-e3a6-40b0-8da6-15e248c59e6b] Started GET "/admin/restaurants/new" for 127.0.0.1 at 2023-11-30 06:10:38 +0500
+I, [2023-11-30T06:10:38.832062 #70225]  INFO -- : [7c4ef57e-e3a6-40b0-8da6-15e248c59e6b] Processing by Admin::RestaurantsController#new as HTML
+I, [2023-11-30T06:10:38.849845 #70225]  INFO -- : [7c4ef57e-e3a6-40b0-8da6-15e248c59e6b]   Rendered /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/active_admin/resource/new.html.arb (Duration: 12.7ms | Allocations: 9570)
+I, [2023-11-30T06:10:38.850166 #70225]  INFO -- : [7c4ef57e-e3a6-40b0-8da6-15e248c59e6b] Completed 200 OK in 18ms (Views: 13.8ms | ActiveRecord: 0.3ms | Allocations: 12381)
+I, [2023-11-30T06:10:41.271449 #70225]  INFO -- : [08e999e5-0b83-4df1-b07a-40f7ef64b8d0] Started POST "/admin/restaurants" for 127.0.0.1 at 2023-11-30 06:10:41 +0500
+I, [2023-11-30T06:10:41.272460 #70225]  INFO -- : [08e999e5-0b83-4df1-b07a-40f7ef64b8d0] Processing by Admin::RestaurantsController#create as HTML
+I, [2023-11-30T06:10:41.272665 #70225]  INFO -- : [08e999e5-0b83-4df1-b07a-40f7ef64b8d0]   Parameters: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"name"=>"fkjsahfjas"}, "commit"=>"Create Restaurant"}
+I, [2023-11-30T06:10:41.282267 #70225]  INFO -- : [08e999e5-0b83-4df1-b07a-40f7ef64b8d0] Redirected to http://0.0.0.0:3000/admin/restaurants/1
+I, [2023-11-30T06:10:41.282427 #70225]  INFO -- : [08e999e5-0b83-4df1-b07a-40f7ef64b8d0] Completed 302 Found in 10ms (ActiveRecord: 1.9ms | Allocations: 3112)
+I, [2023-11-30T06:10:41.286111 #70225]  INFO -- : [f4036065-fd0a-406a-b356-160c049f7b5a] Started GET "/admin/restaurants/1" for 127.0.0.1 at 2023-11-30 06:10:41 +0500
+I, [2023-11-30T06:10:41.286738 #70225]  INFO -- : [f4036065-fd0a-406a-b356-160c049f7b5a] Processing by Admin::RestaurantsController#show as HTML
+I, [2023-11-30T06:10:41.286799 #70225]  INFO -- : [f4036065-fd0a-406a-b356-160c049f7b5a]   Parameters: {"id"=>"1"}
+I, [2023-11-30T06:10:41.348339 #70225]  INFO -- : [f4036065-fd0a-406a-b356-160c049f7b5a]   Rendered /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/active_admin/resource/show.html.arb (Duration: 56.0ms | Allocations: 17292)
+I, [2023-11-30T06:10:41.348788 #70225]  INFO -- : [f4036065-fd0a-406a-b356-160c049f7b5a] Completed 200 OK in 62ms (Views: 51.9ms | ActiveRecord: 6.3ms | Allocations: 18661)
+I, [2023-11-30T06:10:43.425678 #70225]  INFO -- : [381bcba6-d633-440f-9641-7b4cafc9bf7d] Started GET "/admin/food_items" for 127.0.0.1 at 2023-11-30 06:10:43 +0500
+I, [2023-11-30T06:10:43.427136 #70225]  INFO -- : [381bcba6-d633-440f-9641-7b4cafc9bf7d] Processing by Admin::FoodItemsController#index as HTML
+I, [2023-11-30T06:10:43.461571 #70225]  INFO -- : [381bcba6-d633-440f-9641-7b4cafc9bf7d]   Rendered /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/active_admin/resource/index.html.arb (Duration: 25.6ms | Allocations: 14631)
+I, [2023-11-30T06:10:43.461917 #70225]  INFO -- : [381bcba6-d633-440f-9641-7b4cafc9bf7d] Completed 200 OK in 35ms (Views: 25.6ms | ActiveRecord: 4.7ms | Allocations: 16990)
+I, [2023-11-30T06:10:44.485510 #70225]  INFO -- : [0e1e14bd-899d-4f3e-af72-6a6c3e54be01] Started GET "/admin/food_items/new" for 127.0.0.1 at 2023-11-30 06:10:44 +0500
+I, [2023-11-30T06:10:44.486415 #70225]  INFO -- : [0e1e14bd-899d-4f3e-af72-6a6c3e54be01] Processing by Admin::FoodItemsController#new as HTML
+I, [2023-11-30T06:10:44.511293 #70225]  INFO -- : [0e1e14bd-899d-4f3e-af72-6a6c3e54be01]   Rendered /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/active_admin/resource/new.html.arb (Duration: 17.6ms | Allocations: 11691)
+I, [2023-11-30T06:10:44.511586 #70225]  INFO -- : [0e1e14bd-899d-4f3e-af72-6a6c3e54be01] Completed 200 OK in 25ms (Views: 18.4ms | ActiveRecord: 0.6ms | Allocations: 15528)
+I, [2023-11-30T06:10:56.361916 #70225]  INFO -- : [d35d5ea0-4ca1-4fb7-9cc1-59749c2f1a70] Started POST "/admin/food_items" for 127.0.0.1 at 2023-11-30 06:10:56 +0500
+I, [2023-11-30T06:10:56.363093 #70225]  INFO -- : [d35d5ea0-4ca1-4fb7-9cc1-59749c2f1a70] Processing by Admin::FoodItemsController#create as HTML
+I, [2023-11-30T06:10:56.363257 #70225]  INFO -- : [d35d5ea0-4ca1-4fb7-9cc1-59749c2f1a70]   Parameters: {"authenticity_token"=>"[FILTERED]", "food_item"=>{"name"=>"fsajkfas", "price"=>"312321", "description"=>"fsamnfbshf jasfas", "restaurant_id"=>"1", "picture"=>#<ActionDispatch::Http::UploadedFile:0x00007f814374e548 @tempfile=#<Tempfile:/var/folders/nq/dmc41mw50dg8_jxdv1866zq80000gn/T/RackMultipart20231130-70225-ripbkh.avif>, @content_type="image/avif", @original_filename="1610716314_untitled-design-2021-01-15t184025.049.avif", @headers="Content-Disposition: form-data; name=\"food_item[picture]\"; filename=\"1610716314_untitled-design-2021-01-15t184025.049.avif\"\r\nContent-Type: image/avif\r\n">}, "commit"=>"Create Food item"}
+I, [2023-11-30T06:10:59.134887 #70225]  INFO -- : [d35d5ea0-4ca1-4fb7-9cc1-59749c2f1a70] [36m  Cloudinary Storage (2719.7ms) [0m[32mUploaded file to key: bjtkdafi9jd6ez435wnt7t2d73fq (checksum: vv4MaATsiFJDjVzHuBB93g==)[0m
+I, [2023-11-30T06:10:59.135995 #70225]  INFO -- : [d35d5ea0-4ca1-4fb7-9cc1-59749c2f1a70] [ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: d3765c7c-4eec-45a1-87d8-ecafc739af16) to Async(default) with arguments: #<GlobalID:0x00007f814d21c930 @uri=#<URI::GID gid://food-shop/ActiveStorage::Blob/1>>
+I, [2023-11-30T06:10:59.139585 #70225]  INFO -- : [d35d5ea0-4ca1-4fb7-9cc1-59749c2f1a70] Redirected to http://0.0.0.0:3000/admin/food_items/1
+I, [2023-11-30T06:10:59.139927 #70225]  INFO -- : [d35d5ea0-4ca1-4fb7-9cc1-59749c2f1a70] Completed 302 Found in 2777ms (ActiveRecord: 21.7ms | Allocations: 24289)
+I, [2023-11-30T06:10:59.143523 #70225]  INFO -- : [1f41b903-abbd-4b7a-98af-4f3e15562cff] Started GET "/admin/food_items/1" for 127.0.0.1 at 2023-11-30 06:10:59 +0500
+I, [2023-11-30T06:10:59.144400 #70225]  INFO -- : [1f41b903-abbd-4b7a-98af-4f3e15562cff] Processing by Admin::FoodItemsController#show as HTML
+I, [2023-11-30T06:10:59.144465 #70225]  INFO -- : [1f41b903-abbd-4b7a-98af-4f3e15562cff]   Parameters: {"id"=>"1"}
+I, [2023-11-30T06:10:59.170025 #70225]  INFO -- : [1f41b903-abbd-4b7a-98af-4f3e15562cff]   Rendered /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/active_admin/resource/show.html.arb (Duration: 21.2ms | Allocations: 13016)
+I, [2023-11-30T06:10:59.170416 #70225]  INFO -- : [1f41b903-abbd-4b7a-98af-4f3e15562cff] Completed 200 OK in 26ms (Views: 20.6ms | ActiveRecord: 2.0ms | Allocations: 14396)
+I, [2023-11-30T06:10:59.179925 #70225]  INFO -- : [ActiveJob] [ActiveStorage::AnalyzeJob] [d3765c7c-4eec-45a1-87d8-ecafc739af16] Performing ActiveStorage::AnalyzeJob (Job ID: d3765c7c-4eec-45a1-87d8-ecafc739af16) from Async(default) enqueued at 2023-11-30T01:10:59Z with arguments: #<GlobalID:0x00007f814d45fa80 @uri=#<URI::GID gid://food-shop/ActiveStorage::Blob/1>>
+I, [2023-11-30T06:10:59.213933 #70225]  INFO -- : [ActiveJob] [ActiveStorage::AnalyzeJob] [d3765c7c-4eec-45a1-87d8-ecafc739af16] Skipping image analysis because the ruby-vips gem isn't installed
+I, [2023-11-30T06:10:59.217791 #70225]  INFO -- : [ActiveJob] [ActiveStorage::AnalyzeJob] [d3765c7c-4eec-45a1-87d8-ecafc739af16] Performed ActiveStorage::AnalyzeJob (Job ID: d3765c7c-4eec-45a1-87d8-ecafc739af16) from Async(default) in 81.27ms
+I, [2023-11-30T06:11:02.752714 #70225]  INFO -- : [693b5ce1-c6a6-42d4-b3aa-d4038b3624ba] Started GET "/" for 127.0.0.1 at 2023-11-30 06:11:02 +0500
+I, [2023-11-30T06:11:02.753722 #70225]  INFO -- : [693b5ce1-c6a6-42d4-b3aa-d4038b3624ba] Processing by RestaurantsController#index as HTML
+I, [2023-11-30T06:11:02.756504 #70225]  INFO -- : [693b5ce1-c6a6-42d4-b3aa-d4038b3624ba]   Rendered restaurants/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 510)
+I, [2023-11-30T06:11:02.758861 #70225]  INFO -- : [693b5ce1-c6a6-42d4-b3aa-d4038b3624ba]   Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2186)
+I, [2023-11-30T06:11:02.759183 #70225]  INFO -- : [693b5ce1-c6a6-42d4-b3aa-d4038b3624ba] Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.6ms | Allocations: 2521)
+I, [2023-11-30T06:11:02.937932 #70225]  INFO -- : [afe2bf29-60f9-43af-8ac3-ce81040c7778] Started GET "/assets/controllers/application" for 127.0.0.1 at 2023-11-30 06:11:02 +0500
+I, [2023-11-30T06:11:02.943307 #70225]  INFO -- : [fa6fdde9-da63-44b1-8845-ca2004ced5d4] Started GET "/assets/controllers/carrier_controller" for 127.0.0.1 at 2023-11-30 06:11:02 +0500
+I, [2023-11-30T06:11:02.948467 #70225]  INFO -- : [84914280-a127-4819-a11a-1e2ab739f6d3] Started GET "/assets/controllers/hello_controller" for 127.0.0.1 at 2023-11-30 06:11:02 +0500
+I, [2023-11-30T06:11:02.967031 #70225]  INFO -- : [48367439-68ea-4f04-8982-73199c00935c] Started GET "/assets/controllers/order_controller" for 127.0.0.1 at 2023-11-30 06:11:02 +0500
+I, [2023-11-30T06:11:02.969559 #70225]  INFO -- : [1a752375-d747-4ea4-8979-901e66b8f9c8] Started GET "/assets/controllers/cart_controller" for 127.0.0.1 at 2023-11-30 06:11:02 +0500
+I, [2023-11-30T06:11:04.735229 #70225]  INFO -- : [1144242c-42a4-452b-a950-00e02d7f9177] Started GET "/restaurants/1/food_items" for 127.0.0.1 at 2023-11-30 06:11:04 +0500
+I, [2023-11-30T06:11:04.736138 #70225]  INFO -- : [1144242c-42a4-452b-a950-00e02d7f9177] Processing by FoodItemsController#index as HTML
+I, [2023-11-30T06:11:04.736213 #70225]  INFO -- : [1144242c-42a4-452b-a950-00e02d7f9177]   Parameters: {"restaurant_id"=>"1"}
+I, [2023-11-30T06:11:04.747901 #70225]  INFO -- : [1144242c-42a4-452b-a950-00e02d7f9177]   Rendered food_items/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 2597)
+I, [2023-11-30T06:11:04.751120 #70225]  INFO -- : [1144242c-42a4-452b-a950-00e02d7f9177]   Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4093)
+I, [2023-11-30T06:11:04.751463 #70225]  INFO -- : [1144242c-42a4-452b-a950-00e02d7f9177] Completed 200 OK in 15ms (Views: 11.7ms | ActiveRecord: 1.4ms | Allocations: 5241)
+I, [2023-11-30T06:11:06.336938 #70225]  INFO -- : [43e05d9f-88c8-4cb9-b814-787e91834165] Started POST "/order_items" for 127.0.0.1 at 2023-11-30 06:11:06 +0500
+I, [2023-11-30T06:11:06.338163 #70225]  INFO -- : [43e05d9f-88c8-4cb9-b814-787e91834165] Processing by OrderItemsController#create as TURBO_STREAM
+I, [2023-11-30T06:11:06.338258 #70225]  INFO -- : [43e05d9f-88c8-4cb9-b814-787e91834165]   Parameters: {"authenticity_token"=>"[FILTERED]", "order_item"=>{"food_item_id"=>"1", "quantity"=>"1"}}
+I, [2023-11-30T06:11:06.355338 #70225]  INFO -- : [43e05d9f-88c8-4cb9-b814-787e91834165]   Rendered order_items/create.turbo_stream.erb (Duration: 10.1ms | Allocations: 3026)
+I, [2023-11-30T06:11:06.355637 #70225]  INFO -- : [43e05d9f-88c8-4cb9-b814-787e91834165] Completed 200 OK in 17ms (Views: 12.1ms | ActiveRecord: 1.6ms | Allocations: 5068)
+I, [2023-11-30T06:11:26.467604 #70225]  INFO -- : [6b381a96-a42c-4049-8604-b81e4d77d87c] Started DELETE "/order_items/1" for 127.0.0.1 at 2023-11-30 06:11:26 +0500
+I, [2023-11-30T06:11:26.473576 #70225]  INFO -- : [6b381a96-a42c-4049-8604-b81e4d77d87c] Processing by OrderItemsController#destroy as JSON
+I, [2023-11-30T06:11:26.473656 #70225]  INFO -- : [6b381a96-a42c-4049-8604-b81e4d77d87c]   Parameters: {"id"=>"1", "order_item"=>{}}
+I, [2023-11-30T06:11:26.474769 #70225]  INFO -- : [6b381a96-a42c-4049-8604-b81e4d77d87c] Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 3.7ms | Allocations: 611)
+I, [2023-11-30T06:11:30.703811 #70225]  INFO -- : [f948e835-709b-4c7b-86c4-b435c8f01277] Started GET "/restaurants/1/food_items" for 127.0.0.1 at 2023-11-30 06:11:30 +0500
+I, [2023-11-30T06:11:30.704463 #70225]  INFO -- : [f948e835-709b-4c7b-86c4-b435c8f01277] Processing by FoodItemsController#index as HTML
+I, [2023-11-30T06:11:30.704533 #70225]  INFO -- : [f948e835-709b-4c7b-86c4-b435c8f01277]   Parameters: {"restaurant_id"=>"1"}
+I, [2023-11-30T06:11:30.711605 #70225]  INFO -- : [f948e835-709b-4c7b-86c4-b435c8f01277]   Rendered food_items/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1648)
+I, [2023-11-30T06:11:30.713354 #70225]  INFO -- : [f948e835-709b-4c7b-86c4-b435c8f01277]   Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3005)
+I, [2023-11-30T06:11:30.713591 #70225]  INFO -- : [f948e835-709b-4c7b-86c4-b435c8f01277] Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 1.3ms | Allocations: 3453)
+I, [2023-11-30T06:11:30.791016 #70225]  INFO -- : [82431503-6f18-4b04-b368-46d6d16f8080] Started GET "/assets/controllers/application" for 127.0.0.1 at 2023-11-30 06:11:30 +0500
+I, [2023-11-30T06:11:30.794669 #70225]  INFO -- : [1832d3dd-4ba0-4dde-808c-b867d1e8d82e] Started GET "/assets/controllers/carrier_controller" for 127.0.0.1 at 2023-11-30 06:11:30 +0500
+I, [2023-11-30T06:11:30.797193 #70225]  INFO -- : [cbb36238-b3e4-4459-b9e0-d5e414d18472] Started GET "/assets/controllers/hello_controller" for 127.0.0.1 at 2023-11-30 06:11:30 +0500
+I, [2023-11-30T06:11:30.800474 #70225]  INFO -- : [3219adc6-621b-484f-ba1b-dbc3464a9bd0] Started GET "/assets/controllers/order_controller" for 127.0.0.1 at 2023-11-30 06:11:30 +0500
+I, [2023-11-30T06:11:30.802609 #70225]  INFO -- : [e33e83fd-9ffd-45d0-947a-9afc8506007e] Started GET "/assets/controllers/cart_controller" for 127.0.0.1 at 2023-11-30 06:11:30 +0500
+I, [2023-11-30T06:11:32.395400 #70225]  INFO -- : [336fc22d-00ae-47ab-abc6-d93da4d51762] Started POST "/order_items" for 127.0.0.1 at 2023-11-30 06:11:32 +0500
+I, [2023-11-30T06:11:32.396057 #70225]  INFO -- : [336fc22d-00ae-47ab-abc6-d93da4d51762] Processing by OrderItemsController#create as TURBO_STREAM
+I, [2023-11-30T06:11:32.396120 #70225]  INFO -- : [336fc22d-00ae-47ab-abc6-d93da4d51762]   Parameters: {"authenticity_token"=>"[FILTERED]", "order_item"=>{"food_item_id"=>"1", "quantity"=>"1"}}
+I, [2023-11-30T06:11:32.403547 #70225]  INFO -- : [336fc22d-00ae-47ab-abc6-d93da4d51762]   Rendered order_items/create.turbo_stream.erb (Duration: 4.8ms | Allocations: 1967)
+I, [2023-11-30T06:11:32.403765 #70225]  INFO -- : [336fc22d-00ae-47ab-abc6-d93da4d51762] Completed 200 OK in 8ms (Views: 4.4ms | ActiveRecord: 1.2ms | Allocations: 3026)
+I, [2023-11-30T06:13:53.870171 #70446]  INFO -- : Migrating to DeviseCreateUsers (20231023124245)
+I, [2023-11-30T06:13:53.894262 #70446]  INFO -- : Migrating to CreateRestaurants (20231024113411)
+I, [2023-11-30T06:13:53.904130 #70446]  INFO -- : Migrating to CreateFoodItems (20231024114729)
+I, [2023-11-30T06:13:53.914334 #70446]  INFO -- : Migrating to CreateOrders (20231024125728)
+I, [2023-11-30T06:13:53.925346 #70446]  INFO -- : Migrating to CreateOrderItems (20231024132244)
+I, [2023-11-30T06:13:53.933394 #70446]  INFO -- : Migrating to CreateCoupons (20231024132607)
+I, [2023-11-30T06:13:53.941017 #70446]  INFO -- : Migrating to CreateCarts (20231024133121)
+I, [2023-11-30T06:13:53.949239 #70446]  INFO -- : Migrating to CreateCartItems (20231024133304)
+I, [2023-11-30T06:13:53.957971 #70446]  INFO -- : Migrating to RenameUserRoleToType (20231024174029)
+I, [2023-11-30T06:13:53.963036 #70446]  INFO -- : Migrating to DeviseCreateAdminUsers (20231025111908)
+I, [2023-11-30T06:13:53.971802 #70446]  INFO -- : Migrating to CreateActiveAdminComments (20231025111911)
+I, [2023-11-30T06:13:53.982566 #70446]  INFO -- : Migrating to AddAmountToCoupons (20231026074123)
+I, [2023-11-30T06:13:53.985519 #70446]  INFO -- : Migrating to CreateActiveStorageTables (20231027102638)
+I, [2023-11-30T06:13:54.006209 #70446]  INFO -- : Migrating to AddDescriptionToFoodItems (20231027104621)
+I, [2023-11-30T06:13:54.011406 #70446]  INFO -- : Migrating to AddColumnsToOrderItems (20231030105445)
+I, [2023-11-30T06:13:54.016163 #70446]  INFO -- : Migrating to AddCartIdToOrderItems (20231031110959)
+I, [2023-11-30T06:13:54.021884 #70446]  INFO -- : Migrating to ChangeOrderItemsOrderIdNullConstraint (20231031112521)
+I, [2023-11-30T06:13:54.025581 #70446]  INFO -- : Migrating to CreateVerificationDetails (20231031143150)
+I, [2023-11-30T06:13:54.033188 #70446]  INFO -- : Migrating to AddVerifiedColumnToUsers (20231101182343)
+I, [2023-11-30T06:13:54.035981 #70446]  INFO -- : Migrating to AddBankNameToVerificationDetail (20231109161114)
+I, [2023-11-30T06:13:54.038050 #70446]  INFO -- : Migrating to AddCouponAppliedToCarts (20231110135927)
+I, [2023-11-30T06:13:54.040718 #70446]  INFO -- : Migrating to ChangeDecimalPrecision (20231110143122)
+I, [2023-11-30T06:13:54.078847 #70446]  INFO -- : Migrating to AddCouponIdToCart (20231116195751)
+I, [2023-11-30T06:13:54.088181 #70446]  INFO -- : Migrating to RemoveNullConstraintFromCart (20231120212008)
+I, [2023-11-30T06:14:21.720061 #70469]  INFO -- : [85fe7518-45bd-44cb-befd-2682060c5813] Started GET "/admin" for 127.0.0.1 at 2023-11-30 06:14:21 +0500
+I, [2023-11-30T06:14:21.721566 #70469]  INFO -- : [85fe7518-45bd-44cb-befd-2682060c5813] Processing by Admin::DashboardController#index as HTML
+I, [2023-11-30T06:14:21.757913 #70469]  INFO -- : [85fe7518-45bd-44cb-befd-2682060c5813] Completed 401 Unauthorized in 36ms (ActiveRecord: 17.3ms | Allocations: 5808)
+I, [2023-11-30T06:14:21.787291 #70469]  INFO -- : [665fb09a-6ffc-49bb-be48-9618c626f3eb] Started GET "/admin/login" for 127.0.0.1 at 2023-11-30 06:14:21 +0500
+I, [2023-11-30T06:14:21.789183 #70469]  INFO -- : [665fb09a-6ffc-49bb-be48-9618c626f3eb] Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+I, [2023-11-30T06:14:21.815317 #70469]  INFO -- : [665fb09a-6ffc-49bb-be48-9618c626f3eb]   Rendered /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (Duration: 16.6ms | Allocations: 6913)
+I, [2023-11-30T06:14:21.817572 #70469]  INFO -- : [665fb09a-6ffc-49bb-be48-9618c626f3eb]   Rendered layout /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/layouts/active_admin_logged_out.html.erb (Duration: 18.9ms | Allocations: 8047)
+I, [2023-11-30T06:14:21.817871 #70469]  INFO -- : [665fb09a-6ffc-49bb-be48-9618c626f3eb] Completed 200 OK in 28ms (Views: 22.1ms | ActiveRecord: 0.0ms | Allocations: 12142)
+I, [2023-11-30T06:14:37.314477 #70469]  INFO -- : [5ff2c432-5965-423a-9929-2bc67c2d7e27] Started POST "/admin/login" for 127.0.0.1 at 2023-11-30 06:14:37 +0500
+I, [2023-11-30T06:14:37.315338 #70469]  INFO -- : [5ff2c432-5965-423a-9929-2bc67c2d7e27] Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+I, [2023-11-30T06:14:37.315429 #70469]  INFO -- : [5ff2c432-5965-423a-9929-2bc67c2d7e27]   Parameters: {"authenticity_token"=>"[FILTERED]", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+I, [2023-11-30T06:14:37.557529 #70469]  INFO -- : [5ff2c432-5965-423a-9929-2bc67c2d7e27] Redirected to http://0.0.0.0:3000/admin/dashboard
+I, [2023-11-30T06:14:37.557670 #70469]  INFO -- : [5ff2c432-5965-423a-9929-2bc67c2d7e27] Completed 303 See Other in 242ms (ActiveRecord: 0.6ms | Allocations: 3156)
+I, [2023-11-30T06:14:37.561808 #70469]  INFO -- : [3be3c763-b366-4452-8367-c325f16da141] Started GET "/admin/dashboard" for 127.0.0.1 at 2023-11-30 06:14:37 +0500
+I, [2023-11-30T06:14:37.562644 #70469]  INFO -- : [3be3c763-b366-4452-8367-c325f16da141] Processing by Admin::DashboardController#index as HTML
+I, [2023-11-30T06:14:37.585029 #70469]  INFO -- : [3be3c763-b366-4452-8367-c325f16da141]   Rendered /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/active_admin/page/index.html.arb (Duration: 17.1ms | Allocations: 9682)
+I, [2023-11-30T06:14:37.585332 #70469]  INFO -- : [3be3c763-b366-4452-8367-c325f16da141] Completed 200 OK in 23ms (Views: 14.7ms | ActiveRecord: 4.1ms | Allocations: 11609)
+I, [2023-11-30T06:14:38.955975 #70469]  INFO -- : [2ce4f7e7-708e-437e-a651-0aeb75ab2fe8] Started GET "/admin/restaurants" for 127.0.0.1 at 2023-11-30 06:14:38 +0500
+I, [2023-11-30T06:14:38.956793 #70469]  INFO -- : [2ce4f7e7-708e-437e-a651-0aeb75ab2fe8] Processing by Admin::RestaurantsController#index as HTML
+I, [2023-11-30T06:14:38.982651 #70469]  INFO -- : [2ce4f7e7-708e-437e-a651-0aeb75ab2fe8]   Rendered /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/active_admin/resource/index.html.arb (Duration: 17.2ms | Allocations: 12164)
+I, [2023-11-30T06:14:38.983046 #70469]  INFO -- : [2ce4f7e7-708e-437e-a651-0aeb75ab2fe8] Completed 200 OK in 26ms (Views: 18.8ms | ActiveRecord: 3.5ms | Allocations: 14804)
+I, [2023-11-30T06:14:40.168973 #70469]  INFO -- : [f70a606d-6641-4666-960e-d2036bc11d1d] Started GET "/admin/restaurants/new" for 127.0.0.1 at 2023-11-30 06:14:40 +0500
+I, [2023-11-30T06:14:40.169702 #70469]  INFO -- : [f70a606d-6641-4666-960e-d2036bc11d1d] Processing by Admin::RestaurantsController#new as HTML
+I, [2023-11-30T06:14:40.196056 #70469]  INFO -- : [f70a606d-6641-4666-960e-d2036bc11d1d]   Rendered /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/active_admin/resource/new.html.arb (Duration: 21.1ms | Allocations: 9570)
+I, [2023-11-30T06:14:40.196446 #70469]  INFO -- : [f70a606d-6641-4666-960e-d2036bc11d1d] Completed 200 OK in 27ms (Views: 22.6ms | ActiveRecord: 0.2ms | Allocations: 12419)
+I, [2023-11-30T06:14:42.121832 #70469]  INFO -- : [d5c9a3ed-6485-4e08-af7d-bc6a4551a9d5] Started POST "/admin/restaurants" for 127.0.0.1 at 2023-11-30 06:14:42 +0500
+I, [2023-11-30T06:14:42.122650 #70469]  INFO -- : [d5c9a3ed-6485-4e08-af7d-bc6a4551a9d5] Processing by Admin::RestaurantsController#create as HTML
+I, [2023-11-30T06:14:42.122859 #70469]  INFO -- : [d5c9a3ed-6485-4e08-af7d-bc6a4551a9d5]   Parameters: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"name"=>"fsafas"}, "commit"=>"Create Restaurant"}
+I, [2023-11-30T06:14:42.132598 #70469]  INFO -- : [d5c9a3ed-6485-4e08-af7d-bc6a4551a9d5] Redirected to http://0.0.0.0:3000/admin/restaurants/1
+I, [2023-11-30T06:14:42.132743 #70469]  INFO -- : [d5c9a3ed-6485-4e08-af7d-bc6a4551a9d5] Completed 302 Found in 10ms (ActiveRecord: 1.9ms | Allocations: 3186)
+I, [2023-11-30T06:14:42.137197 #70469]  INFO -- : [bd1c7bb2-81da-48ab-b49c-064ff3a2e9cb] Started GET "/admin/restaurants/1" for 127.0.0.1 at 2023-11-30 06:14:42 +0500
+I, [2023-11-30T06:14:42.137851 #70469]  INFO -- : [bd1c7bb2-81da-48ab-b49c-064ff3a2e9cb] Processing by Admin::RestaurantsController#show as HTML
+I, [2023-11-30T06:14:42.137923 #70469]  INFO -- : [bd1c7bb2-81da-48ab-b49c-064ff3a2e9cb]   Parameters: {"id"=>"1"}
+I, [2023-11-30T06:14:42.175647 #70469]  INFO -- : [bd1c7bb2-81da-48ab-b49c-064ff3a2e9cb]   Rendered /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/active_admin/resource/show.html.arb (Duration: 33.1ms | Allocations: 17289)
+I, [2023-11-30T06:14:42.176072 #70469]  INFO -- : [bd1c7bb2-81da-48ab-b49c-064ff3a2e9cb] Completed 200 OK in 38ms (Views: 30.1ms | ActiveRecord: 5.1ms | Allocations: 18674)
+I, [2023-11-30T06:14:44.092921 #70469]  INFO -- : [408d6cdf-a481-4e7d-827a-a7e73abde772] Started GET "/admin/food_items" for 127.0.0.1 at 2023-11-30 06:14:44 +0500
+I, [2023-11-30T06:14:44.093802 #70469]  INFO -- : [408d6cdf-a481-4e7d-827a-a7e73abde772] Processing by Admin::FoodItemsController#index as HTML
+I, [2023-11-30T06:14:44.125128 #70469]  INFO -- : [408d6cdf-a481-4e7d-827a-a7e73abde772]   Rendered /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/active_admin/resource/index.html.arb (Duration: 22.8ms | Allocations: 14632)
+I, [2023-11-30T06:14:44.125445 #70469]  INFO -- : [408d6cdf-a481-4e7d-827a-a7e73abde772] Completed 200 OK in 32ms (Views: 23.3ms | ActiveRecord: 4.5ms | Allocations: 17017)
+I, [2023-11-30T06:14:44.944636 #70469]  INFO -- : [67feaa68-1c7d-413f-bb2b-65acb3b6cf7b] Started GET "/admin/food_items/new" for 127.0.0.1 at 2023-11-30 06:14:44 +0500
+I, [2023-11-30T06:14:44.945350 #70469]  INFO -- : [67feaa68-1c7d-413f-bb2b-65acb3b6cf7b] Processing by Admin::FoodItemsController#new as HTML
+I, [2023-11-30T06:14:44.983689 #70469]  INFO -- : [67feaa68-1c7d-413f-bb2b-65acb3b6cf7b]   Rendered /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/active_admin/resource/new.html.arb (Duration: 31.8ms | Allocations: 11688)
+I, [2023-11-30T06:14:44.984023 #70469]  INFO -- : [67feaa68-1c7d-413f-bb2b-65acb3b6cf7b] Completed 200 OK in 39ms (Views: 32.5ms | ActiveRecord: 0.4ms | Allocations: 15490)
+I, [2023-11-30T06:15:02.018976 #70469]  INFO -- : [5d95f357-daa9-4b38-a246-e53d37c7dc63] Started POST "/admin/food_items" for 127.0.0.1 at 2023-11-30 06:15:02 +0500
+I, [2023-11-30T06:15:02.020734 #70469]  INFO -- : [5d95f357-daa9-4b38-a246-e53d37c7dc63] Processing by Admin::FoodItemsController#create as HTML
+I, [2023-11-30T06:15:02.020977 #70469]  INFO -- : [5d95f357-daa9-4b38-a246-e53d37c7dc63]   Parameters: {"authenticity_token"=>"[FILTERED]", "food_item"=>{"name"=>"dasd", "price"=>"31231", "description"=>"fsafsafasf casfsaffsa", "restaurant_id"=>"1", "picture"=>#<ActionDispatch::Http::UploadedFile:0x00007fcb342ee508 @tempfile=#<Tempfile:/var/folders/nq/dmc41mw50dg8_jxdv1866zq80000gn/T/RackMultipart20231130-70469-g3jinq.avif>, @content_type="image/avif", @original_filename="1610716314_untitled-design-2021-01-15t184025.049.avif", @headers="Content-Disposition: form-data; name=\"food_item[picture]\"; filename=\"1610716314_untitled-design-2021-01-15t184025.049.avif\"\r\nContent-Type: image/avif\r\n">}, "commit"=>"Create Food item"}
+I, [2023-11-30T06:15:04.960151 #70469]  INFO -- : [5d95f357-daa9-4b38-a246-e53d37c7dc63] [36m  Cloudinary Storage (2898.5ms) [0m[32mUploaded file to key: qcfeatzmy89wjmrfwpgvk068fs7e (checksum: vv4MaATsiFJDjVzHuBB93g==)[0m
+I, [2023-11-30T06:15:04.961226 #70469]  INFO -- : [5d95f357-daa9-4b38-a246-e53d37c7dc63] [ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 4963bc5a-c587-4dc3-b931-fbff6878aa37) to Async(default) with arguments: #<GlobalID:0x00007fcb39d89b70 @uri=#<URI::GID gid://food-shop/ActiveStorage::Blob/1>>
+I, [2023-11-30T06:15:04.964996 #70469]  INFO -- : [5d95f357-daa9-4b38-a246-e53d37c7dc63] Redirected to http://0.0.0.0:3000/admin/food_items/1
+I, [2023-11-30T06:15:04.965296 #70469]  INFO -- : [5d95f357-daa9-4b38-a246-e53d37c7dc63] Completed 302 Found in 2944ms (ActiveRecord: 11.7ms | Allocations: 24362)
+I, [2023-11-30T06:15:04.970459 #70469]  INFO -- : [f5506791-27e1-4642-bf99-4e6f9e0d91e5] Started GET "/admin/food_items/1" for 127.0.0.1 at 2023-11-30 06:15:04 +0500
+I, [2023-11-30T06:15:04.971709 #70469]  INFO -- : [f5506791-27e1-4642-bf99-4e6f9e0d91e5] Processing by Admin::FoodItemsController#show as HTML
+I, [2023-11-30T06:15:04.971786 #70469]  INFO -- : [f5506791-27e1-4642-bf99-4e6f9e0d91e5]   Parameters: {"id"=>"1"}
+I, [2023-11-30T06:15:04.999160 #70469]  INFO -- : [f5506791-27e1-4642-bf99-4e6f9e0d91e5]   Rendered /Users/dev/.rvm/gems/ruby-3.0.6/gems/activeadmin-3.1.0/app/views/active_admin/resource/show.html.arb (Duration: 23.3ms | Allocations: 13247)
+I, [2023-11-30T06:15:04.999705 #70469]  INFO -- : [f5506791-27e1-4642-bf99-4e6f9e0d91e5] Completed 200 OK in 28ms (Views: 22.0ms | ActiveRecord: 2.8ms | Allocations: 14705)
+I, [2023-11-30T06:15:05.006477 #70469]  INFO -- : [ActiveJob] [ActiveStorage::AnalyzeJob] [4963bc5a-c587-4dc3-b931-fbff6878aa37] Performing ActiveStorage::AnalyzeJob (Job ID: 4963bc5a-c587-4dc3-b931-fbff6878aa37) from Async(default) enqueued at 2023-11-30T01:15:04Z with arguments: #<GlobalID:0x00007fcb346d63c8 @uri=#<URI::GID gid://food-shop/ActiveStorage::Blob/1>>
+I, [2023-11-30T06:15:05.029721 #70469]  INFO -- : [ActiveJob] [ActiveStorage::AnalyzeJob] [4963bc5a-c587-4dc3-b931-fbff6878aa37] Skipping image analysis because the ruby-vips gem isn't installed
+I, [2023-11-30T06:15:05.035285 #70469]  INFO -- : [ActiveJob] [ActiveStorage::AnalyzeJob] [4963bc5a-c587-4dc3-b931-fbff6878aa37] Performed ActiveStorage::AnalyzeJob (Job ID: 4963bc5a-c587-4dc3-b931-fbff6878aa37) from Async(default) in 73.58ms
+I, [2023-11-30T06:15:07.280112 #70469]  INFO -- : [c308923d-1b09-4baf-b733-0db6627c6076] Started GET "/" for 127.0.0.1 at 2023-11-30 06:15:07 +0500
+I, [2023-11-30T06:15:07.280887 #70469]  INFO -- : [c308923d-1b09-4baf-b733-0db6627c6076] Processing by RestaurantsController#index as HTML
+I, [2023-11-30T06:15:07.288482 #70469]  INFO -- : [c308923d-1b09-4baf-b733-0db6627c6076]   Rendered restaurants/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 835)
+I, [2023-11-30T06:15:07.309481 #70469]  INFO -- : [c308923d-1b09-4baf-b733-0db6627c6076]   Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 9876)
+I, [2023-11-30T06:15:07.309759 #70469]  INFO -- : [c308923d-1b09-4baf-b733-0db6627c6076] Completed 200 OK in 29ms (Views: 23.5ms | ActiveRecord: 2.3ms | Allocations: 11048)
+I, [2023-11-30T06:15:07.330111 #70469]  INFO -- : [46adb680-5fe0-4a43-a4d9-858d0a55a216] Started GET "/assets/tailwind-e03d0b9623f93b24bdcf3ca06307ecfdf3a28d819c206283d17fb9eef152990e.css" for 127.0.0.1 at 2023-11-30 06:15:07 +0500
+F, [2023-11-30T06:15:07.331454 #70469] FATAL -- : [46adb680-5fe0-4a43-a4d9-858d0a55a216]   
+[46adb680-5fe0-4a43-a4d9-858d0a55a216] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-e03d0b9623f93b24bdcf3ca06307ecfdf3a28d819c206283d17fb9eef152990e.css"):
+[46adb680-5fe0-4a43-a4d9-858d0a55a216]   
+I, [2023-11-30T06:15:07.347067 #70469]  INFO -- : [dc6ef007-acc7-4bdc-9484-57665e4720ca] Started GET "/assets/application-0f07b82b701e9357b006643052f2995ff79c9b3a7bfc72c5ce58cfb561b30856.css" for 127.0.0.1 at 2023-11-30 06:15:07 +0500
+F, [2023-11-30T06:15:07.347590 #70469] FATAL -- : [dc6ef007-acc7-4bdc-9484-57665e4720ca]   
+[dc6ef007-acc7-4bdc-9484-57665e4720ca] ActionController::RoutingError (No route matches [GET] "/assets/application-0f07b82b701e9357b006643052f2995ff79c9b3a7bfc72c5ce58cfb561b30856.css"):
+[dc6ef007-acc7-4bdc-9484-57665e4720ca]   
+I, [2023-11-30T06:15:07.349505 #70469]  INFO -- : [c2047324-67b7-4254-bf0f-3af988f93437] Started GET "/assets/application-3eb5564a9b54cb42c8e9312a1eca916a8f1993b8e4de620ff3cc98d3e532c628.js" for 127.0.0.1 at 2023-11-30 06:15:07 +0500
+F, [2023-11-30T06:15:07.350694 #70469] FATAL -- : [c2047324-67b7-4254-bf0f-3af988f93437]   
+[c2047324-67b7-4254-bf0f-3af988f93437] ActionController::RoutingError (No route matches [GET] "/assets/application-3eb5564a9b54cb42c8e9312a1eca916a8f1993b8e4de620ff3cc98d3e532c628.js"):
+[c2047324-67b7-4254-bf0f-3af988f93437]   
+I, [2023-11-30T06:15:07.360326 #70469]  INFO -- : [8c458d25-22fc-4b0a-864b-b315b605f2e0] Started GET "/assets/default_restaurant-f53f29b379affc24fcef23fc07332429eb930a12799d768821bb0dad4be356be.gif" for 127.0.0.1 at 2023-11-30 06:15:07 +0500
+F, [2023-11-30T06:15:07.361624 #70469] FATAL -- : [8c458d25-22fc-4b0a-864b-b315b605f2e0]   
+[8c458d25-22fc-4b0a-864b-b315b605f2e0] ActionController::RoutingError (No route matches [GET] "/assets/default_restaurant-f53f29b379affc24fcef23fc07332429eb930a12799d768821bb0dad4be356be.gif"):
+[8c458d25-22fc-4b0a-864b-b315b605f2e0]   
+I, [2023-11-30T06:15:19.534686 #70469]  INFO -- : [9752c4e2-3c96-469c-9303-3f1fbafe12a3] Started GET "/" for 127.0.0.1 at 2023-11-30 06:15:19 +0500
+I, [2023-11-30T06:15:19.535274 #70469]  INFO -- : [9752c4e2-3c96-469c-9303-3f1fbafe12a3] Processing by RestaurantsController#index as HTML
+I, [2023-11-30T06:15:19.537237 #70469]  INFO -- : [9752c4e2-3c96-469c-9303-3f1fbafe12a3]   Rendered restaurants/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 375)
+I, [2023-11-30T06:15:19.545545 #70469]  INFO -- : [9752c4e2-3c96-469c-9303-3f1fbafe12a3]   Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3590)
+I, [2023-11-30T06:15:19.545771 #70469]  INFO -- : [9752c4e2-3c96-469c-9303-3f1fbafe12a3] Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 1.2ms | Allocations: 3888)
+I, [2023-11-30T06:15:19.561374 #70469]  INFO -- : [ca0a21f6-0b49-4c5a-85f3-1bb2b2658919] Started GET "/assets/tailwind-e03d0b9623f93b24bdcf3ca06307ecfdf3a28d819c206283d17fb9eef152990e.css" for 127.0.0.1 at 2023-11-30 06:15:19 +0500
+F, [2023-11-30T06:15:19.561761 #70469] FATAL -- : [ca0a21f6-0b49-4c5a-85f3-1bb2b2658919]   
+[ca0a21f6-0b49-4c5a-85f3-1bb2b2658919] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-e03d0b9623f93b24bdcf3ca06307ecfdf3a28d819c206283d17fb9eef152990e.css"):
+[ca0a21f6-0b49-4c5a-85f3-1bb2b2658919]   
+I, [2023-11-30T06:15:19.564227 #70469]  INFO -- : [f1bc0ec9-8eae-474f-b0b4-897ea103ffc2] Started GET "/assets/application-0f07b82b701e9357b006643052f2995ff79c9b3a7bfc72c5ce58cfb561b30856.css" for 127.0.0.1 at 2023-11-30 06:15:19 +0500
+F, [2023-11-30T06:15:19.564689 #70469] FATAL -- : [f1bc0ec9-8eae-474f-b0b4-897ea103ffc2]   
+[f1bc0ec9-8eae-474f-b0b4-897ea103ffc2] ActionController::RoutingError (No route matches [GET] "/assets/application-0f07b82b701e9357b006643052f2995ff79c9b3a7bfc72c5ce58cfb561b30856.css"):
+[f1bc0ec9-8eae-474f-b0b4-897ea103ffc2]   
+I, [2023-11-30T06:15:19.566041 #70469]  INFO -- : [3940b680-7a1e-4864-ad53-4100d492e4a4] Started GET "/assets/application-3eb5564a9b54cb42c8e9312a1eca916a8f1993b8e4de620ff3cc98d3e532c628.js" for 127.0.0.1 at 2023-11-30 06:15:19 +0500
+F, [2023-11-30T06:15:19.566730 #70469] FATAL -- : [3940b680-7a1e-4864-ad53-4100d492e4a4]   
+[3940b680-7a1e-4864-ad53-4100d492e4a4] ActionController::RoutingError (No route matches [GET] "/assets/application-3eb5564a9b54cb42c8e9312a1eca916a8f1993b8e4de620ff3cc98d3e532c628.js"):
+[3940b680-7a1e-4864-ad53-4100d492e4a4]   
+I, [2023-11-30T06:15:19.569462 #70469]  INFO -- : [c42b0811-c1ba-4d5f-8be3-8ea2fff94ba4] Started GET "/assets/default_restaurant-f53f29b379affc24fcef23fc07332429eb930a12799d768821bb0dad4be356be.gif" for 127.0.0.1 at 2023-11-30 06:15:19 +0500
+F, [2023-11-30T06:15:19.569816 #70469] FATAL -- : [c42b0811-c1ba-4d5f-8be3-8ea2fff94ba4]   
+[c42b0811-c1ba-4d5f-8be3-8ea2fff94ba4] ActionController::RoutingError (No route matches [GET] "/assets/default_restaurant-f53f29b379affc24fcef23fc07332429eb930a12799d768821bb0dad4be356be.gif"):
+[c42b0811-c1ba-4d5f-8be3-8ea2fff94ba4]   
+I, [2023-11-30T06:15:43.208316 #70469]  INFO -- : [4763c9dd-80a2-4d33-a136-1865fbcfb493] Started GET "/" for 127.0.0.1 at 2023-11-30 06:15:43 +0500
+I, [2023-11-30T06:15:43.209219 #70469]  INFO -- : [4763c9dd-80a2-4d33-a136-1865fbcfb493] Processing by RestaurantsController#index as HTML
+I, [2023-11-30T06:15:43.211458 #70469]  INFO -- : [4763c9dd-80a2-4d33-a136-1865fbcfb493]   Rendered restaurants/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 375)
+I, [2023-11-30T06:15:43.229158 #70469]  INFO -- : [4763c9dd-80a2-4d33-a136-1865fbcfb493]   Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 3586)
+I, [2023-11-30T06:15:43.229877 #70469]  INFO -- : [4763c9dd-80a2-4d33-a136-1865fbcfb493] Completed 200 OK in 21ms (Views: 12.6ms | ActiveRecord: 7.6ms | Allocations: 3867)
+I, [2023-11-30T06:15:43.245124 #70469]  INFO -- : [716d8eec-c542-4f51-a453-8c71df520765] Started GET "/assets/tailwind-e03d0b9623f93b24bdcf3ca06307ecfdf3a28d819c206283d17fb9eef152990e.css" for 127.0.0.1 at 2023-11-30 06:15:43 +0500
+F, [2023-11-30T06:15:43.245683 #70469] FATAL -- : [716d8eec-c542-4f51-a453-8c71df520765]   
+[716d8eec-c542-4f51-a453-8c71df520765] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-e03d0b9623f93b24bdcf3ca06307ecfdf3a28d819c206283d17fb9eef152990e.css"):
+[716d8eec-c542-4f51-a453-8c71df520765]   
+I, [2023-11-30T06:15:43.247365 #70469]  INFO -- : [a053dd28-d808-4ada-9d0d-179c6018f422] Started GET "/assets/application-0f07b82b701e9357b006643052f2995ff79c9b3a7bfc72c5ce58cfb561b30856.css" for 127.0.0.1 at 2023-11-30 06:15:43 +0500
+F, [2023-11-30T06:15:43.248250 #70469] FATAL -- : [a053dd28-d808-4ada-9d0d-179c6018f422]   
+[a053dd28-d808-4ada-9d0d-179c6018f422] ActionController::RoutingError (No route matches [GET] "/assets/application-0f07b82b701e9357b006643052f2995ff79c9b3a7bfc72c5ce58cfb561b30856.css"):
+[a053dd28-d808-4ada-9d0d-179c6018f422]   
+I, [2023-11-30T06:15:43.251173 #70469]  INFO -- : [0c3a67e7-6ba3-417d-b527-c060768f0fee] Started GET "/assets/application-3eb5564a9b54cb42c8e9312a1eca916a8f1993b8e4de620ff3cc98d3e532c628.js" for 127.0.0.1 at 2023-11-30 06:15:43 +0500
+F, [2023-11-30T06:15:43.251886 #70469] FATAL -- : [0c3a67e7-6ba3-417d-b527-c060768f0fee]   
+[0c3a67e7-6ba3-417d-b527-c060768f0fee] ActionController::RoutingError (No route matches [GET] "/assets/application-3eb5564a9b54cb42c8e9312a1eca916a8f1993b8e4de620ff3cc98d3e532c628.js"):
+[0c3a67e7-6ba3-417d-b527-c060768f0fee]   
+I, [2023-11-30T06:15:43.255907 #70469]  INFO -- : [54e81902-6a4b-4334-9869-2145608773a7] Started GET "/assets/default_restaurant-f53f29b379affc24fcef23fc07332429eb930a12799d768821bb0dad4be356be.gif" for 127.0.0.1 at 2023-11-30 06:15:43 +0500
+F, [2023-11-30T06:15:43.256673 #70469] FATAL -- : [54e81902-6a4b-4334-9869-2145608773a7]   
+[54e81902-6a4b-4334-9869-2145608773a7] ActionController::RoutingError (No route matches [GET] "/assets/default_restaurant-f53f29b379affc24fcef23fc07332429eb930a12799d768821bb0dad4be356be.gif"):
+[54e81902-6a4b-4334-9869-2145608773a7]   
+I, [2023-11-30T06:15:45.801664 #70469]  INFO -- : [2b0779cd-ef13-4506-af42-fb59ca41567e] Started GET "/restaurants/1/food_items" for 127.0.0.1 at 2023-11-30 06:15:45 +0500
+I, [2023-11-30T06:15:45.802583 #70469]  INFO -- : [2b0779cd-ef13-4506-af42-fb59ca41567e] Processing by FoodItemsController#index as HTML
+I, [2023-11-30T06:15:45.802667 #70469]  INFO -- : [2b0779cd-ef13-4506-af42-fb59ca41567e]   Parameters: {"restaurant_id"=>"1"}
+I, [2023-11-30T06:15:45.817054 #70469]  INFO -- : [2b0779cd-ef13-4506-af42-fb59ca41567e]   Rendered food_items/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2560)
+I, [2023-11-30T06:15:45.824081 #70469]  INFO -- : [2b0779cd-ef13-4506-af42-fb59ca41567e]   Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 5655)
+I, [2023-11-30T06:15:45.824316 #70469]  INFO -- : [2b0779cd-ef13-4506-af42-fb59ca41567e] Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 1.5ms | Allocations: 6770)
+I, [2023-11-30T06:15:45.840329 #70469]  INFO -- : [b5788e06-5fe2-4621-9a4c-1855595dd96e] Started GET "/assets/tailwind-e03d0b9623f93b24bdcf3ca06307ecfdf3a28d819c206283d17fb9eef152990e.css" for 127.0.0.1 at 2023-11-30 06:15:45 +0500
+F, [2023-11-30T06:15:45.841053 #70469] FATAL -- : [b5788e06-5fe2-4621-9a4c-1855595dd96e]   
+[b5788e06-5fe2-4621-9a4c-1855595dd96e] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-e03d0b9623f93b24bdcf3ca06307ecfdf3a28d819c206283d17fb9eef152990e.css"):
+[b5788e06-5fe2-4621-9a4c-1855595dd96e]   
+I, [2023-11-30T06:15:45.845988 #70469]  INFO -- : [5ecc9c04-cf1f-45e8-bf58-592566978f62] Started GET "/assets/application-0f07b82b701e9357b006643052f2995ff79c9b3a7bfc72c5ce58cfb561b30856.css" for 127.0.0.1 at 2023-11-30 06:15:45 +0500
+F, [2023-11-30T06:15:45.846502 #70469] FATAL -- : [5ecc9c04-cf1f-45e8-bf58-592566978f62]   
+[5ecc9c04-cf1f-45e8-bf58-592566978f62] ActionController::RoutingError (No route matches [GET] "/assets/application-0f07b82b701e9357b006643052f2995ff79c9b3a7bfc72c5ce58cfb561b30856.css"):
+[5ecc9c04-cf1f-45e8-bf58-592566978f62]   
+I, [2023-11-30T06:15:45.847710 #70469]  INFO -- : [fd47b7d0-9f77-4ba1-8a54-93c2b4382a3a] Started GET "/assets/application-3eb5564a9b54cb42c8e9312a1eca916a8f1993b8e4de620ff3cc98d3e532c628.js" for 127.0.0.1 at 2023-11-30 06:15:45 +0500
+F, [2023-11-30T06:15:45.848584 #70469] FATAL -- : [fd47b7d0-9f77-4ba1-8a54-93c2b4382a3a]   
+[fd47b7d0-9f77-4ba1-8a54-93c2b4382a3a] ActionController::RoutingError (No route matches [GET] "/assets/application-3eb5564a9b54cb42c8e9312a1eca916a8f1993b8e4de620ff3cc98d3e532c628.js"):
+[fd47b7d0-9f77-4ba1-8a54-93c2b4382a3a]   
+I, [2023-11-30T06:15:47.761306 #70469]  INFO -- : [dde9b866-3659-476a-bd1b-9549f0e214c3] Started POST "/order_items" for 127.0.0.1 at 2023-11-30 06:15:47 +0500
+I, [2023-11-30T06:15:47.762258 #70469]  INFO -- : [dde9b866-3659-476a-bd1b-9549f0e214c3] Processing by OrderItemsController#create as HTML
+I, [2023-11-30T06:15:47.762408 #70469]  INFO -- : [dde9b866-3659-476a-bd1b-9549f0e214c3]   Parameters: {"authenticity_token"=>"[FILTERED]", "order_item"=>{"food_item_id"=>"1", "quantity"=>"1"}}
+I, [2023-11-30T06:15:47.768413 #70469]  INFO -- : [dde9b866-3659-476a-bd1b-9549f0e214c3] Completed 406 Not Acceptable in 6ms (ActiveRecord: 0.5ms | Allocations: 1392)
+F, [2023-11-30T06:15:47.769293 #70469] FATAL -- : [dde9b866-3659-476a-bd1b-9549f0e214c3]   
+[dde9b866-3659-476a-bd1b-9549f0e214c3] ActionController::UnknownFormat (OrderItemsController#create is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []):
+[dde9b866-3659-476a-bd1b-9549f0e214c3]   
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/abstract_controller/base.rb:215:in `process_action'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_controller/metal/rendering.rb:165:in `process_action'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] activesupport (7.0.8) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actiontext (7.0.8) lib/action_text/rendering.rb:20:in `with_renderer'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actiontext (7.0.8) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] activesupport (7.0.8) lib/active_support/callbacks.rb:127:in `instance_exec'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] activesupport (7.0.8) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] activesupport (7.0.8) lib/active_support/callbacks.rb:138:in `run_callbacks'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/abstract_controller/callbacks.rb:233:in `process_action'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_controller/metal/rescue.rb:23:in `process_action'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] activesupport (7.0.8) lib/active_support/notifications.rb:206:in `block in instrument'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] activesupport (7.0.8) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] activesupport (7.0.8) lib/active_support/notifications.rb:206:in `instrument'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] activerecord (7.0.8) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/abstract_controller/base.rb:151:in `process'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionview (7.0.8) lib/action_view/rendering.rb:39:in `process'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_controller/metal.rb:188:in `dispatch'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_controller/metal.rb:251:in `dispatch'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_dispatch/journey/router.rb:32:in `each'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_dispatch/journey/router.rb:32:in `serve'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:852:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] warden (1.2.9) lib/warden/manager.rb:34:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] rack (2.2.8) lib/rack/etag.rb:27:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] rack (2.2.8) lib/rack/head.rb:12:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] activesupport (7.0.8) lib/active_support/callbacks.rb:99:in `run_callbacks'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] railties (7.0.8) lib/rails/rack/logger.rb:40:in `call_app'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] railties (7.0.8) lib/rails/rack/logger.rb:25:in `block in call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] activesupport (7.0.8) lib/active_support/tagged_logging.rb:37:in `tagged'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `tagged'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] railties (7.0.8) lib/rails/rack/logger.rb:25:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] actionpack (7.0.8) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] railties (7.0.8) lib/rails/engine.rb:530:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+[dde9b866-3659-476a-bd1b-9549f0e214c3] puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+I, [2023-11-30T06:16:06.632626 #70469]  INFO -- : [01ac6d34-3ed1-43c1-bfb5-d34f4ab9a8aa] Started GET "/assets/tailwind-e03d0b9623f93b24bdcf3ca06307ecfdf3a28d819c206283d17fb9eef152990e.css" for 127.0.0.1 at 2023-11-30 06:16:06 +0500
+F, [2023-11-30T06:16:06.633172 #70469] FATAL -- : [01ac6d34-3ed1-43c1-bfb5-d34f4ab9a8aa]   
+[01ac6d34-3ed1-43c1-bfb5-d34f4ab9a8aa] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-e03d0b9623f93b24bdcf3ca06307ecfdf3a28d819c206283d17fb9eef152990e.css"):
+[01ac6d34-3ed1-43c1-bfb5-d34f4ab9a8aa]   
+I, [2023-11-30T06:16:06.639014 #70469]  INFO -- : [f4728567-8f37-4366-8647-8be66aa86085] Started GET "/assets/application-0f07b82b701e9357b006643052f2995ff79c9b3a7bfc72c5ce58cfb561b30856.css" for 127.0.0.1 at 2023-11-30 06:16:06 +0500
+F, [2023-11-30T06:16:06.639551 #70469] FATAL -- : [f4728567-8f37-4366-8647-8be66aa86085]   
+[f4728567-8f37-4366-8647-8be66aa86085] ActionController::RoutingError (No route matches [GET] "/assets/application-0f07b82b701e9357b006643052f2995ff79c9b3a7bfc72c5ce58cfb561b30856.css"):
+[f4728567-8f37-4366-8647-8be66aa86085]   
+I, [2023-11-30T06:16:11.244905 #70469]  INFO -- : [8b9eea9e-a851-4fea-b480-149cc3ba6fde] Started POST "/order_items" for 127.0.0.1 at 2023-11-30 06:16:11 +0500
+I, [2023-11-30T06:16:11.245636 #70469]  INFO -- : [8b9eea9e-a851-4fea-b480-149cc3ba6fde] Processing by OrderItemsController#create as HTML
+I, [2023-11-30T06:16:11.245742 #70469]  INFO -- : [8b9eea9e-a851-4fea-b480-149cc3ba6fde]   Parameters: {"authenticity_token"=>"[FILTERED]", "order_item"=>{"food_item_id"=>"1", "quantity"=>"1"}}
+I, [2023-11-30T06:16:11.248746 #70469]  INFO -- : [8b9eea9e-a851-4fea-b480-149cc3ba6fde] Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.4ms | Allocations: 934)
+F, [2023-11-30T06:16:11.249392 #70469] FATAL -- : [8b9eea9e-a851-4fea-b480-149cc3ba6fde]   
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] ActionController::UnknownFormat (OrderItemsController#create is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []):
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde]   
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/abstract_controller/base.rb:215:in `process_action'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_controller/metal/rendering.rb:165:in `process_action'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] activesupport (7.0.8) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actiontext (7.0.8) lib/action_text/rendering.rb:20:in `with_renderer'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actiontext (7.0.8) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] activesupport (7.0.8) lib/active_support/callbacks.rb:127:in `instance_exec'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] activesupport (7.0.8) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] activesupport (7.0.8) lib/active_support/callbacks.rb:138:in `run_callbacks'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/abstract_controller/callbacks.rb:233:in `process_action'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_controller/metal/rescue.rb:23:in `process_action'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] activesupport (7.0.8) lib/active_support/notifications.rb:206:in `block in instrument'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] activesupport (7.0.8) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] activesupport (7.0.8) lib/active_support/notifications.rb:206:in `instrument'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] activerecord (7.0.8) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/abstract_controller/base.rb:151:in `process'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionview (7.0.8) lib/action_view/rendering.rb:39:in `process'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_controller/metal.rb:188:in `dispatch'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_controller/metal.rb:251:in `dispatch'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_dispatch/journey/router.rb:32:in `each'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_dispatch/journey/router.rb:32:in `serve'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:852:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] warden (1.2.9) lib/warden/manager.rb:34:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] rack (2.2.8) lib/rack/etag.rb:27:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] rack (2.2.8) lib/rack/head.rb:12:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] activesupport (7.0.8) lib/active_support/callbacks.rb:99:in `run_callbacks'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] railties (7.0.8) lib/rails/rack/logger.rb:40:in `call_app'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] railties (7.0.8) lib/rails/rack/logger.rb:25:in `block in call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] activesupport (7.0.8) lib/active_support/tagged_logging.rb:37:in `tagged'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `tagged'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] railties (7.0.8) lib/rails/rack/logger.rb:25:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] actionpack (7.0.8) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] railties (7.0.8) lib/rails/engine.rb:530:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+[8b9eea9e-a851-4fea-b480-149cc3ba6fde] puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+I, [2023-11-30T06:16:17.793922 #70469]  INFO -- : [a73fd596-c489-4086-9c97-d5499c228026] Started GET "/assets/tailwind-e03d0b9623f93b24bdcf3ca06307ecfdf3a28d819c206283d17fb9eef152990e.css" for 127.0.0.1 at 2023-11-30 06:16:17 +0500
+F, [2023-11-30T06:16:17.794570 #70469] FATAL -- : [a73fd596-c489-4086-9c97-d5499c228026]   
+[a73fd596-c489-4086-9c97-d5499c228026] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-e03d0b9623f93b24bdcf3ca06307ecfdf3a28d819c206283d17fb9eef152990e.css"):
+[a73fd596-c489-4086-9c97-d5499c228026]   
+I, [2023-11-30T06:16:17.796260 #70469]  INFO -- : [69070f34-c3e6-4eba-a167-e5ea3422a11d] Started GET "/assets/application-0f07b82b701e9357b006643052f2995ff79c9b3a7bfc72c5ce58cfb561b30856.css" for 127.0.0.1 at 2023-11-30 06:16:17 +0500
+F, [2023-11-30T06:16:17.796806 #70469] FATAL -- : [69070f34-c3e6-4eba-a167-e5ea3422a11d]   
+[69070f34-c3e6-4eba-a167-e5ea3422a11d] ActionController::RoutingError (No route matches [GET] "/assets/application-0f07b82b701e9357b006643052f2995ff79c9b3a7bfc72c5ce58cfb561b30856.css"):
+[69070f34-c3e6-4eba-a167-e5ea3422a11d]   
+I, [2023-11-30T06:16:19.027409 #70469]  INFO -- : [ab29d341-f0fc-4211-accb-f6338f5d7186] Started GET "/restaurants/1/food_items" for 127.0.0.1 at 2023-11-30 06:16:19 +0500
+I, [2023-11-30T06:16:19.028013 #70469]  INFO -- : [ab29d341-f0fc-4211-accb-f6338f5d7186] Processing by FoodItemsController#index as HTML
+I, [2023-11-30T06:16:19.028065 #70469]  INFO -- : [ab29d341-f0fc-4211-accb-f6338f5d7186]   Parameters: {"restaurant_id"=>"1"}
+I, [2023-11-30T06:16:19.033793 #70469]  INFO -- : [ab29d341-f0fc-4211-accb-f6338f5d7186]   Rendered food_items/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1637)
+I, [2023-11-30T06:16:19.039628 #70469]  INFO -- : [ab29d341-f0fc-4211-accb-f6338f5d7186]   Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 4512)
+I, [2023-11-30T06:16:19.039870 #70469]  INFO -- : [ab29d341-f0fc-4211-accb-f6338f5d7186] Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 1.4ms | Allocations: 4958)
+I, [2023-11-30T06:16:19.052326 #70469]  INFO -- : [4490aeeb-71eb-4399-8a38-2a13a2b21cb2] Started GET "/assets/tailwind-e03d0b9623f93b24bdcf3ca06307ecfdf3a28d819c206283d17fb9eef152990e.css" for 127.0.0.1 at 2023-11-30 06:16:19 +0500
+F, [2023-11-30T06:16:19.052703 #70469] FATAL -- : [4490aeeb-71eb-4399-8a38-2a13a2b21cb2]   
+[4490aeeb-71eb-4399-8a38-2a13a2b21cb2] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-e03d0b9623f93b24bdcf3ca06307ecfdf3a28d819c206283d17fb9eef152990e.css"):
+[4490aeeb-71eb-4399-8a38-2a13a2b21cb2]   
+I, [2023-11-30T06:16:19.057126 #70469]  INFO -- : [61ac6b9c-e75b-4a33-bb73-7538d77165ca] Started GET "/assets/application-0f07b82b701e9357b006643052f2995ff79c9b3a7bfc72c5ce58cfb561b30856.css" for 127.0.0.1 at 2023-11-30 06:16:19 +0500
+F, [2023-11-30T06:16:19.057720 #70469] FATAL -- : [61ac6b9c-e75b-4a33-bb73-7538d77165ca]   
+[61ac6b9c-e75b-4a33-bb73-7538d77165ca] ActionController::RoutingError (No route matches [GET] "/assets/application-0f07b82b701e9357b006643052f2995ff79c9b3a7bfc72c5ce58cfb561b30856.css"):
+[61ac6b9c-e75b-4a33-bb73-7538d77165ca]   
+I, [2023-11-30T06:16:19.058621 #70469]  INFO -- : [5f865f21-7f73-42f8-a649-f183cc45d549] Started GET "/assets/application-3eb5564a9b54cb42c8e9312a1eca916a8f1993b8e4de620ff3cc98d3e532c628.js" for 127.0.0.1 at 2023-11-30 06:16:19 +0500
+F, [2023-11-30T06:16:19.059299 #70469] FATAL -- : [5f865f21-7f73-42f8-a649-f183cc45d549]   
+[5f865f21-7f73-42f8-a649-f183cc45d549] ActionController::RoutingError (No route matches [GET] "/assets/application-3eb5564a9b54cb42c8e9312a1eca916a8f1993b8e4de620ff3cc98d3e532c628.js"):
+[5f865f21-7f73-42f8-a649-f183cc45d549]   
+I, [2023-11-30T06:16:20.663438 #70469]  INFO -- : [007175d5-7deb-44a1-8cdd-52789b4ecad8] Started POST "/order_items" for 127.0.0.1 at 2023-11-30 06:16:20 +0500
+I, [2023-11-30T06:16:20.664114 #70469]  INFO -- : [007175d5-7deb-44a1-8cdd-52789b4ecad8] Processing by OrderItemsController#create as HTML
+I, [2023-11-30T06:16:20.664185 #70469]  INFO -- : [007175d5-7deb-44a1-8cdd-52789b4ecad8]   Parameters: {"authenticity_token"=>"[FILTERED]", "order_item"=>{"food_item_id"=>"1", "quantity"=>"1"}}
+I, [2023-11-30T06:16:20.667464 #70469]  INFO -- : [007175d5-7deb-44a1-8cdd-52789b4ecad8] Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.4ms | Allocations: 939)
+F, [2023-11-30T06:16:20.668141 #70469] FATAL -- : [007175d5-7deb-44a1-8cdd-52789b4ecad8]   
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] ActionController::UnknownFormat (OrderItemsController#create is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []):
+[007175d5-7deb-44a1-8cdd-52789b4ecad8]   
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/abstract_controller/base.rb:215:in `process_action'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_controller/metal/rendering.rb:165:in `process_action'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] activesupport (7.0.8) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actiontext (7.0.8) lib/action_text/rendering.rb:20:in `with_renderer'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actiontext (7.0.8) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] activesupport (7.0.8) lib/active_support/callbacks.rb:127:in `instance_exec'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] activesupport (7.0.8) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] activesupport (7.0.8) lib/active_support/callbacks.rb:138:in `run_callbacks'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/abstract_controller/callbacks.rb:233:in `process_action'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_controller/metal/rescue.rb:23:in `process_action'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] activesupport (7.0.8) lib/active_support/notifications.rb:206:in `block in instrument'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] activesupport (7.0.8) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] activesupport (7.0.8) lib/active_support/notifications.rb:206:in `instrument'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] activerecord (7.0.8) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/abstract_controller/base.rb:151:in `process'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionview (7.0.8) lib/action_view/rendering.rb:39:in `process'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_controller/metal.rb:188:in `dispatch'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_controller/metal.rb:251:in `dispatch'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_dispatch/journey/router.rb:32:in `each'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_dispatch/journey/router.rb:32:in `serve'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:852:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] warden (1.2.9) lib/warden/manager.rb:34:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] rack (2.2.8) lib/rack/etag.rb:27:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] rack (2.2.8) lib/rack/head.rb:12:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] activesupport (7.0.8) lib/active_support/callbacks.rb:99:in `run_callbacks'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] railties (7.0.8) lib/rails/rack/logger.rb:40:in `call_app'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] railties (7.0.8) lib/rails/rack/logger.rb:25:in `block in call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] activesupport (7.0.8) lib/active_support/tagged_logging.rb:37:in `tagged'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `tagged'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] railties (7.0.8) lib/rails/rack/logger.rb:25:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] actionpack (7.0.8) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] railties (7.0.8) lib/rails/engine.rb:530:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+[007175d5-7deb-44a1-8cdd-52789b4ecad8] puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+I, [2023-11-30T06:16:25.752579 #70469]  INFO -- : [f6dda12b-99d3-45f5-82fa-5a146c1aa14e] Started GET "/assets/tailwind-e03d0b9623f93b24bdcf3ca06307ecfdf3a28d819c206283d17fb9eef152990e.css" for 127.0.0.1 at 2023-11-30 06:16:25 +0500
+F, [2023-11-30T06:16:25.753284 #70469] FATAL -- : [f6dda12b-99d3-45f5-82fa-5a146c1aa14e]   
+[f6dda12b-99d3-45f5-82fa-5a146c1aa14e] ActionController::RoutingError (No route matches [GET] "/assets/tailwind-e03d0b9623f93b24bdcf3ca06307ecfdf3a28d819c206283d17fb9eef152990e.css"):
+[f6dda12b-99d3-45f5-82fa-5a146c1aa14e]   
+I, [2023-11-30T06:16:25.754227 #70469]  INFO -- : [48d83d1f-55b1-4321-b6ec-b0ab9fe6dddc] Started GET "/assets/application-0f07b82b701e9357b006643052f2995ff79c9b3a7bfc72c5ce58cfb561b30856.css" for 127.0.0.1 at 2023-11-30 06:16:25 +0500
+F, [2023-11-30T06:16:25.754912 #70469] FATAL -- : [48d83d1f-55b1-4321-b6ec-b0ab9fe6dddc]   
+[48d83d1f-55b1-4321-b6ec-b0ab9fe6dddc] ActionController::RoutingError (No route matches [GET] "/assets/application-0f07b82b701e9357b006643052f2995ff79c9b3a7bfc72c5ce58cfb561b30856.css"):
+[48d83d1f-55b1-4321-b6ec-b0ab9fe6dddc]   
+I, [2023-11-30T06:16:26.558801 #70469]  INFO -- : [59538078-4cbb-4a3d-b87e-7057f5061ed5] Started POST "/order_items" for 127.0.0.1 at 2023-11-30 06:16:26 +0500
+I, [2023-11-30T06:16:26.559384 #70469]  INFO -- : [59538078-4cbb-4a3d-b87e-7057f5061ed5] Processing by OrderItemsController#create as HTML
+I, [2023-11-30T06:16:26.559439 #70469]  INFO -- : [59538078-4cbb-4a3d-b87e-7057f5061ed5]   Parameters: {"authenticity_token"=>"[FILTERED]", "order_item"=>{"food_item_id"=>"1", "quantity"=>"1"}}
+I, [2023-11-30T06:16:26.562191 #70469]  INFO -- : [59538078-4cbb-4a3d-b87e-7057f5061ed5] Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.4ms | Allocations: 939)
+F, [2023-11-30T06:16:26.562955 #70469] FATAL -- : [59538078-4cbb-4a3d-b87e-7057f5061ed5]   
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] ActionController::UnknownFormat (OrderItemsController#create is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []):
+[59538078-4cbb-4a3d-b87e-7057f5061ed5]   
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_controller/metal/basic_implicit_render.rb:7:in `send_action'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/abstract_controller/base.rb:215:in `process_action'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_controller/metal/rendering.rb:165:in `process_action'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] activesupport (7.0.8) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actiontext (7.0.8) lib/action_text/rendering.rb:20:in `with_renderer'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actiontext (7.0.8) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] activesupport (7.0.8) lib/active_support/callbacks.rb:127:in `instance_exec'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] activesupport (7.0.8) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] activesupport (7.0.8) lib/active_support/callbacks.rb:138:in `run_callbacks'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/abstract_controller/callbacks.rb:233:in `process_action'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_controller/metal/rescue.rb:23:in `process_action'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] activesupport (7.0.8) lib/active_support/notifications.rb:206:in `block in instrument'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] activesupport (7.0.8) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] activesupport (7.0.8) lib/active_support/notifications.rb:206:in `instrument'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] activerecord (7.0.8) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/abstract_controller/base.rb:151:in `process'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionview (7.0.8) lib/action_view/rendering.rb:39:in `process'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_controller/metal.rb:188:in `dispatch'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_controller/metal.rb:251:in `dispatch'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_dispatch/journey/router.rb:32:in `each'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_dispatch/journey/router.rb:32:in `serve'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_dispatch/routing/route_set.rb:852:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] warden (1.2.9) lib/warden/manager.rb:34:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] rack (2.2.8) lib/rack/etag.rb:27:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] rack (2.2.8) lib/rack/head.rb:12:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] activesupport (7.0.8) lib/active_support/callbacks.rb:99:in `run_callbacks'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] railties (7.0.8) lib/rails/rack/logger.rb:40:in `call_app'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] railties (7.0.8) lib/rails/rack/logger.rb:25:in `block in call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] activesupport (7.0.8) lib/active_support/tagged_logging.rb:37:in `tagged'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `tagged'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] railties (7.0.8) lib/rails/rack/logger.rb:25:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] actionpack (7.0.8) lib/action_dispatch/middleware/host_authorization.rb:131:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] railties (7.0.8) lib/rails/engine.rb:530:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+[59538078-4cbb-4a3d-b87e-7057f5061ed5] puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'

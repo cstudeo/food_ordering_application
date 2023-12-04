@@ -1,0 +1,51 @@
+<% if user_signed_in? %>
+  <% @order_items = current_cart.order_items %>
+  <% if @order_items %>
+    <% @order_items.each do |item| %>
+      <div id="order-item-<%= item.id %>" class="flex items-center justify-center grid grid-cols-4 mt-4">
+        <div class='grid items-center' >
+          <%= cl_image_tag(item.food_item.picture.key, class: "pr-2 w-30 h-20 rounded cart-item-image w-full") %>
+        </div>
+        <h3 class="food-title"><%= item.food_item.name%></h3>
+        <h3 id="item-total-<%=item.id%>" class='text-right food-price'>NGN <%= number_with_precision(item.total, precision: 1) %></h3>
+        <div class="flex flex-row">
+          <span data-id= <%=item.id%>, data-action= "click->cart#decrement" class="ml-auto input-number-decrement">–</span><span class="input-number" id="food-quantity-<%=item.id%>" type="text"><%= item.quantity %></span><span data-id= <%=item.id%>, data-action= "click->cart#increment" class="input-number-increment">+</span>
+        </div>
+      </div>
+
+      <hr>
+    <% end %>
+  <% end %>
+<% else %>
+  <% if session[:order_details] %>
+    <% session[:order_details].each do |item| %>
+      <% food_item = FoodItem.find_by(id: item["food_item_id"] || item[:food_item_id]) %>
+      <% if food_item.restaurant == current_restaurant %>
+        <div id="order-item-<%= food_item.id %>" class="flex items-center justify-center grid grid-cols-4 mt-4">
+          <div class='grid items-center' >
+            <%= cl_image_tag(food_item.picture.key, class: "pr-2 w-30 h-20 rounded cart-item-image w-full") %>
+          </div>
+          <h2 class="food-title"><%= food_item.name%></h2>
+          <h6 id="item-total-<%=food_item.id%>" class='text-right food-price'>$<%= food_item.price * (item['quantity'] || item[:quantity]).to_i %></h6>
+          <div class="flex flex-row">
+            <span data-id= <%=food_item.id%> data-price= <%=food_item.price%> data-action= "click->cart#session_decrement" class="ml-auto input-number-decrement">–</span>
+            <span class="input-number" id="food-quantity-<%=food_item.id%>"><%= item['quantity'] || item[:quantity] %></span>
+            <span data-id= <%=food_item.id%> data-price= <%=food_item.price%> data-action= "click->cart#session_increment" class="input-number-increment">+</span>
+          </div>
+        </div>
+
+        <hr>
+      <% end %>
+    <% end %>
+  <% end %>
+  <% end %>
+  <% if user_signed_in? && @order_items.present? %>  
+    <h3 id='grand-total' class='font-semibold'>Total: NGN <%= number_with_precision(cart_total, precision: 2) %></h3>
+
+    <%= render 'shared/place_order_button' %>
+  <% elsif session[:order_details].present?  %>
+    <h3 id='grand-total' class='font-semibold'>Total: NGN <%= number_with_precision(cart_total, precision: 2) %></h3>
+
+    <%= render 'shared/place_order_button' %>
+  <% end %>
+

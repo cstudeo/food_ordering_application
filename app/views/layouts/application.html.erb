@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FoodShop</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application.css", "data-turbo-track": "reload" %>
+
+    <%= javascript_importmap_tags %>
+    <!--- <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %> --->
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://js.paystack.co/v2/inline.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"
+      defer
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+  </head>
+
+  <body>
+    <%= render 'shared/header' %> 
+
+    <%= render 'shared/cart_drawer' %>
+    
+    <%= yield %>
+
+    <%= render 'shared/footer' %>
+
+    <script>
+      var navbar = document.getElementById('navbar');
+
+      // Function to add or remove the transition class
+      function toggleTransition() {
+          if (window.scrollY >= 50) {
+              navbar.classList.add('bg-white', 'shadow-md', 'transition-bg');
+              navbar.classList.remove('bg-transparent');
+          } else {
+              navbar.classList.add('bg-transparent', 'transition-bg');
+              navbar.classList.remove('bg-white', 'shadow-md');
+          }
+      }
+      // Attach the scroll event listener
+
+      window.addEventListener('scroll', toggleTransition);
+        function closeFlashMessages() {
+          const flashMessages = document.getElementById('flash-messages');
+          flashMessages.style.display = 'none';
+        }
+    </script>
+  </body>
+</html>
